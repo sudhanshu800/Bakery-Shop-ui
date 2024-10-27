@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enjoy our handmade bakery goods, crafted with love and the finest ingredients.">
+  <title>Bakery Shop</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Bakery Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Banner Image -->
+  <header class="banner text-center">
+    <div class="banner-text">
+      <h1>Welcome to Bakery Shop</h1>
+      
+    </div>
+  </header>
+
+  <!-- Description Section -->
+  <section id="about" class="container my-5">
+    <div class="text-center">
+      <h2>About Us</h2>
+      <p>At Bakery Shop, we specialize in a variety of handmade pastries, breads, and cakes. Using only the finest ingredients, we create mouth-watering treats for every occasion.</p>
+    </div>
+  </section>
+
+  <!-- Product Cards Section -->
+  <section id="products" class="container my-5">
+    <h2 class="text-center">Our Products</h2>
+    <div class="row">
+      <!-- Product Card -->
+      <div class="col-md-4">
+        <div class="card product-card" onclick="logFeature('Croissant')">
+          <img src="images/Quick-French-Croissant-.webp" class="card-img-top" alt="Croissant">
+          <div class="card-body">
+            <h5 class="card-title">Croissant</h5>
+            <p class="card-text">Flaky, buttery, and perfect for a quick breakfast.</p>
+            <p class="price"> ₹222.50</p>
+            <button class="btn btn-primary" onclick="logFeature('Order Croissant')">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card" onclick="logFeature('Croissant')">
+          <img src="images/Dottedi-.webp" class="card-img-top" alt="Croissant">
+          <div class="card-body">
+            <h5 class="card-title">Dottedi</h5>
+            <p class="card-text">Flaky, buttery, and perfect for a quick breakfast.</p>
+            <p class="price"> ₹122.50</p>
+            <button class="btn btn-primary" onclick="logFeature('Order Croissant')">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card" onclick="logFeature('Croissant')">
+          <img src="images/sourdough-bread.webp" class="card-img-top" alt="Croissant">
+          <div class="card-body">
+            <h5 class="card-title">sourdough-bread</h5>
+            <p class="card-text">Flaky, buttery, and perfect for a quick breakfast.</p>
+            <p class="price"> ₹342.50</p>
+            <button class="btn btn-primary" onclick="logFeature('Order Croissant')">Order Now</button>
+          </div>
+        </div>
+      </div>
+        </div>
+  </section>
+
+   <!-- Property Features Section -->
+   <section id="features" class="container my-5">
+    <h2 class="text-center">Our Property Features</h2>
+    <ul class="list-group">
+      <li class="list-group-item" onclick="logFeature('Free Wi-Fi')">Free Wi-Fi</li>
+      <li class="list-group-item" onclick="logFeature('Outdoor Seating')">Outdoor Seating</li>
+      <li class="list-group-item" onclick="logFeature('Wheelchair Accessible')">Wheelchair Accessible</li>
+      <li class="list-group-item" onclick="logFeature('Pet-Friendly')">Pet-Friendly</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <h2 class="text-center">Contact Us</h2>
+    <p class="text-center">123 Bakery St., Sweet Town, USA</p>
+    <p class="text-center">Email: contact@bakerydelight.com</p>
+    <br>
+    <hr>
+    <br>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="logFeature('Contact Form Submitted')">Submit</button>
+    </form>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
